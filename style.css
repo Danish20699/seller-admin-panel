@@ -1,0 +1,127 @@
+/* ---------- General ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* ---------- Heading ---------- */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- Form ---------- */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
+
+/* ---------- Total Stock ---------- */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* ---------- Product List ---------- */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.product-card strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-card button {
+  padding: 6px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.product-card .edit {
+  background: #ffc107;
+  color: #fff;
+}
+
+.product-card .edit:hover {
+  background: #e0a800;
+}
+
+.product-card .delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.product-card .delete:hover {
+  background: #a71d2a;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: auto;
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
